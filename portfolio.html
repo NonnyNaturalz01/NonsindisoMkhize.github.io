@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Data Scientist Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="neural-canvas"></canvas>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">DS<span>.</span>Portfolio</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certificates">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" id="mobile-close">✕</button>
+  <a href="#about" class="mm-link">About</a>
+  <a href="#skills" class="mm-link">Skills</a>
+  <a href="#projects" class="mm-link">Projects</a>
+  <a href="#experience" class="mm-link">Experience</a>
+  <a href="#certificates" class="mm-link">Certs</a>
+  <a href="#contact" class="mm-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="hero-tag">Data Scientist · AI Builder </span>
+      <h1 class="hero-name">
+        Data Storytelling<br>
+        <span class="line2">Nonsindiso Mkhize</span>
+      </h1>
+      <p class="hero-desc">Machine learning practitioner with a passion for AI that drives real-world impact — from hackathon-winning voice assistants to end-to-end ML pipelines.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-orb">
+        <img src="profile photo.jpg" alt="Profile" class="orb-img" />
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-num">01 / About</span>
+      <h2 class="section-title">The Story <em>Behind the Data</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <p>I'm a data scientist with a deep commitment to using AI and machine learning for meaningful impact. My journey began with two intensive bootcamps — the <strong>ALX Data Science Bootcamp</strong> (14 months) and the <strong>Applied Data Science Lab at WorldQuant University</strong> — where I built a solid foundation across the full data science lifecycle.</p>
+        <p>I've taken that foundation into the real world, winning <strong>two AI hackathons</strong>: one for a voice-first assistant for people with visual disabilities using Google Cloud & Africa's Talking APIs, and another building an AI solution for women entrepreneurs in informal markets.</p>
+        <p>Beyond technical skills, I'm currently studying <strong>Applied Artificial Intelligence</strong> at IU University deepening my knowledge in advanced AI systems and real-world applications.</p>
+        <p>I participated in the <strong>Africa Trust &amp; Safety LLM Challenge</strong> on Zindi, further expanding my applied experience in large language models and responsible AI.I’m passionate about building AI solutions that are practical and capable of driving real-world change.</p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat-box">
+          <span class="stat-num">14mo</span>
+          <span class="stat-label">ALX Bootcamp</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">2×</span>
+          <span class="stat-label">Hackathon Wins</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">8+</span>
+          <span class="stat-label">End-to-End Projects</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">AI</span>
+          <span class="stat-label">Africa Trust & Safety LLM Challenge</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-num">02 / Skills</span>
+      <h2 class="section-title">Technical <em>Skills</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">🐍</div>
+        <div class="skill-name">Programming</div>
+        <div class="skill-tags">
+          <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🤖</div>
+        <div class="skill-name">Machine Learning</div>
+        <div class="skill-tags">
+          <span class="tag">Regression</span><span class="tag">Classification</span><span class="tag">SVM</span><span class="tag">Clustering</span><span class="tag">Unsupervised Learning</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">💬</div>
+        <div class="skill-name">NLP & AI</div>
+        <div class="skill-tags">
+          <span class="tag">Sentiment Analysis</span><span class="tag">LLMs</span><span class="tag">GenAI</span><span class="tag">Text Classification</span><span class="tag">NLP Pipelines</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">📊</div>
+        <div class="skill-name">Data Visualization</div>
+        <div class="skill-tags">
+          <span class="tag">Tableau</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Storytelling</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">☁️</div>
+        <div class="skill-name">Cloud & MLOps</div>
+        <div class="skill-tags">
+          <span class="tag">AWS Fundamentals</span><span class="tag">Azure ML Designer</span><span class="tag">Google Cloud</span><span class="tag">HuggingFace</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🔌</div>
+        <div class="skill-name">APIs & Tools</div>
+        <div class="skill-tags">
+          <span class="tag">Africa's Talking API</span><span class="tag">Google Cloud APIs</span><span class="tag">Git</span><span class="tag">Claude</span><span class="tag">VS Code</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-num">03 / Projects</span>
+      <h2 class="section-title">Featured <em>Work</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div>
+          <span class="project-badge">🏆 Hackathon Win 1st Place </span>
+          <div class="project-title">VoiceFirst Accessibility Assistant</div>
+        </div>
+        <p class="project-desc">A voice-first AI assistant built for people with visual disabilities, enabling hands-free access to information using Google Cloud AI and Africa's Talking APIs. Won the "Build with AI: GenAI + APIs Across Africa" hackathon.</p>
+        <div class="project-stack">
+          <span class="tag">Google Cloud</span><span class="tag">Africa's Talking API</span><span class="tag">GenAI</span><span class="tag">HuggingFace</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/NonnyNaturalz01/ConnectWise">📂 GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div>
+          <span class="project-badge">🏆 Hackathon Win 3rd place</span>
+          <div class="project-title">Ubuhle AI </div>
+        </div>
+        <p class="project-desc">An AI solution developed for the International Women's Day Hackathon, designed to help women in informal businesses attract customers and validate their products using machine learning and Claude AI.</p>
+        <div class="project-stack">
+          <span class="tag">Python</span><span class="tag">GenAI</span><span class="tag">NLP</span><span class="tag">APIs</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/NonnyNaturalz01/Ubuhle_AI">📂 GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div>
+          <span class="project-badge">Deep Learning</span>
+          <div class="project-title">Neural Network in NumPy</div>
+        </div>
+        <p class="project-desc">Implemented a neural network using only Numpy, demonstrating backpropagation, gradient descent, and the chain rule.</p>
+        <div class="project-stack">
+          <span class="tag">Python</span><span class="tag">Numpy</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/NonnyNaturalz01/Deep_Learning_with_Numpy">📂 GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div>
+          <span class="project-badge">Applied ML</span>
+          <div class="project-title">Diabetes Prediction & Azure Pipeline</div>
+        </div>
+        <p class="project-desc">Built a Diabetes Prediction Model using Support Vector Machine and automated the entire workflow as a retrainable pipeline in Azure ML Designer — enabling early risk identification at scale.</p>
+        <div class="project-stack">
+          <span class="tag">SVM</span><span class="tag">Azure ML</span><span class="tag">Scikit-learn</span><span class="tag">MLOps</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/NonnyNaturalz01/Diabetes-Predictive-Azure-project">📂 GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div>
+          <span class="project-badge">HuggingFace Project</span>
+          <div class="project-title">MamaCare</div>
+        </div>
+        <p class="project-desc"> An interactive AI app deployed on HuggingFace Spaces to help pregnant women assess their symptoms and seek
+        appropriate care (emergency, doctor visit or home monitoring).</p>
+        <div class="project-stack">
+          <span class="tag">Python</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">TinyLlama-NLP</span>
+        </div>
+        <div class="project-links">
+          <a href="https://huggingface.co/spaces/Nonsindiso/MamaCare">📂 Hugging Face</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div>
+          <span class="project-badge">Data Analysis</span>
+          <div class="project-title">Amazon-Prime-Data-Analysis-Dashboard</div>
+        </div>
+        <p class="project-desc">Tableau Dashboard, an interactive analysis of Amazon Prime Video's movie catalog, exploring trends, genres,
+        ratings and release years. Shows the distribution of movies, helps discover insights,
+        and make data-driven decisions about what to watch.</p>
+        <div class="project-stack">
+          <span class="tag">Tableau</span><span class="tag">Python</span><span class="tag">Data Analysis</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/NonnyNaturalz01/Amazon-Prime-Data-Analysis-Dashboard">📂 Github</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-num">04 / Experience</span>
+      <h2 class="section-title">Education & <em>Work History</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="tl-header">
+          <div class="tl-role">Applied Artificial Intelligence</div>
+          <span class="tl-period">Pursuing, Distance Learning</span>
+        </div>
+        <div class="tl-org">IU University</div>
+        <ul class="tl-points">
+          <li>Currently pursuing a degree in Applied Artificial Intelligence, deepening my knowledge in advanced AI systems,
+            responsible AI, and real-world applications.</li>
+        </ul>
+      </div>
+      
+      <div class="timeline-item reveal">
+        <div class="tl-header">
+          <div class="tl-role">Applied Data Science Lab</div>
+          <span class="tl-period">Oct 2024 – Aug 2025</span>
+        </div>
+        <div class="tl-org">WorldQuant University — Remote</div>
+        <ul class="tl-points">
+          <li>Built 8 end-to-end data science projects applying machine learning and data analysis techniques across diverse
+            domains.</li>
+          <li>Developed proficiency in the full DS workflow: data wrangling, feature engineering, modelling, evaluation, and
+            deployment.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="tl-header">
+          <div class="tl-role">Data Science Bootcamp</div>
+          <span class="tl-period">Mar 2024 – May 2025</span>
+        </div>
+        <div class="tl-org">African Leadership Experience (ALX) — Remote</div>
+        <ul class="tl-points">
+          <li>Completed 14-month intensive program covering soft skills, data analysis, SQL, data visualization, Python, regression, NLP & classification, unsupervised learning, and AWS fundamentals.</li>
+          <li>Applied learnings to real-world datasets and collaborative team projects throughout the programme.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="tl-header">
+          <div class="tl-role">Call Center Agent — Back Office</div>
+          <span class="tl-period">Sep 2021 – Jan 2022</span>
+        </div>
+        <div class="tl-org">Call Center International (CCI) — Umhlanga, KZN</div>
+        <ul class="tl-points">
+          <li>Resolved over 150 customer inquiries monthly with focused attention and support equivalent to front-line representatives.</li>
+          <li>Identified important trends through analysis of customer feedback data, improving overall satisfaction ratings and service performance.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="tl-header">
+          <div class="tl-role">Office Administrator</div>
+          <span class="tl-period">Jun 2021 – Aug 2021</span>
+        </div>
+        <div class="tl-org">Lusipho Financial Services — Durban, KZN</div>
+        <ul class="tl-points">
+          <li>Gained exposure in the financial services industry through document preparation and data management.</li>
+          <li>Scheduled appointments and processed financial documents with attention to detail and commitment to confidentiality.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-num">05 / Certificates</span>
+      <h2 class="section-title">Credentials & <em>Achievements</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="certs-grid">
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">🎓</div>
+        <div>
+          <div class="cert-name">Data Science Bootcamp Certificate</div>
+          <div class="cert-issuer">African Leadership Experience (ALX)</div>
+          <div class="cert-date">2024 – 2025</div>
+          <a href="https://drive.google.com/file/d/1n8GCzqVKWDEQX5Tg1GPiS3hCemtW0cCk/view?usp=sharing">📂 Link</a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">🏛️</div>
+        <div>
+          <div class="cert-name">Applied Data Science Lab Certificate</div>
+          <div class="cert-issuer">WorldQuant University</div>
+          <div class="cert-date">Oct 2024 – Aug 2025</div>
+          <a href="https://www.credly.com/badges/72a74364-1a58-4eb9-a33d-45e368fdc091">📂 Link</a>
+        </div>
+      </div>
+
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">🏆</div>
+        <div>
+          <div class="cert-name">International Women's Day Hackathon</div>
+          <div class="cert-issuer">Hackathon Winner</div>
+          <div class="cert-date">2025</div>
+          <a href="https://drive.google.com/file/d/1Tv_8Im4wQrSQRgVQXoGufc35mXp05Jik/view?usp=sharing">📂 Link</a>
+        </div>
+      </div>
+
+      
+      <div class="cert-card reveal">
+        <div class="cert-icon">🏛️</div>
+        <div>
+          <div class="cert-name">A to Z Machine Learning Course</div>
+          <div class="cert-issuer">Udemy</div>
+          <div class="cert-date">2025</div>
+          <a href="https://drive.google.com/file/d/1NgqFR0LHBEy9AM_4UBAPkMV3jGaFzzSC/view?usp=sharing">📂 Link</a>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-num">06 / Contact</span>
+      <h2 class="section-title">Let's <em>Connect</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-inner">
+      <div class="contact-info reveal">
+        <h3>Open to Opportunities</h3>
+        <p>Whether you're looking for a data scientist, want to collaborate on an AI project, or just want to connect — I'd love to hear from you.</p>
+        <div class="contact-links">
+          <a href="mailto:nonsindisomkhize8@email.com" class="contact-link">
+            <div class="cl-icon">✉</div>
+            <span>nonsindisomkhize8@email.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/nonsindiso-mkhize-58a7b6185/" class="contact-link" target="_blank">
+            <div class="cl-icon">in</div>
+            <span>LinkedIn Profile</span>
+          </a>
+          <a href="https://github.com/NonnyNaturalz01" class="contact-link" target="_blank">
+            <div class="cl-icon">⌥</div>
+            <span>GitHub Portfolio</span>
+          </a>
+          <a href="https://huggingface.co/Nonsindiso" class="contact-link">
+            <div class="cl-icon">🤗</div>
+            <span>HuggingFace Profile</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <form id="contact-form">
+          <div class="form-row">
+            <label>
+              <span class="label-text">Name</span>
+              <input type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              <span class="label-text">Email</span>
+              <input type="email" placeholder="your@email.com" required />
+            </label>
+          </div>
+          <label>
+            <span class="label-text">Subject</span>
+            <input type="text" placeholder="What's this about?" />
+          </label>
+          <label>
+            <span class="label-text">Message</span>
+            <textarea placeholder="Tell me about your project or opportunity..."></textarea>
+          </label>
+          <button type="submit" class="btn-primary" style="cursor:none;align-self:flex-start;">Send Message →</button>
+          <p class="form-status" id="form-status">✓ Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p></p> <span>Data Science Portfolio</span> · South Africa 🇿🇦</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
